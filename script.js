@@ -1,16 +1,3 @@
-// // script.js
-// const mobileMenu = document.getElementById('mobile-menu');
-// const navLinks = document.querySelector('.nav-links');
-
-// mobileMenu.addEventListener('click', () => {
-//     navLinks.classList.toggle('active');
-//     if (navLinks.classList.contains('active')) {
-//         navLinks.style.display = 'block';
-//     } else {
-//         navLinks.style.display = 'none';
-//     }
-// });
-
 
 function toggleMenu() {
     var menu = document.getElementById("menu");
@@ -26,4 +13,11 @@ function toggleMenu() {
       menu.classList.add("hidden");
       menuIcon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
     }
+  }
+
+  function signUpChange(){
+    var signuppanel = document.getElementById("signuppanel");
+    signuppanel.classList.add("hidden");
+    var messagepanel = document.getElementById("messagepanel");
+    messagepanel.classList.remove("hidden");
   }
